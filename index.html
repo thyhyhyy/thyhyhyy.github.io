@@ -24,23 +24,69 @@ a:active {
   background-color: none;
   text-decoration: underline;
 }
+body {
+  background: linear-gradient(135deg, #FFDAB9 0%, #E6E6FA 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+}
+h1, p, li {
+  color: #333;
+}
+main {
+  max-width: 700px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  font-size: 2.5rem;
+  color: #7C3AED;
+  margin-bottom: 20px;
+}
+p {
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+}
+p.bio {
+  font-style: italic;
+  color: #555;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+p.closing {
+  text-align: center;
+  font-size: 1rem;
+  color: #777;
+  margin-top: 30px;
+}
 </style>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewpoint" content="width-device-with, intitial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<h1 class="text-3xl font-bold">
-    Hi Friends! It's Thy 🐈‍
-</h1>
-<p> I'm glad you are here. I'm a Global Recruiter, a Vietnamese girl, who take great pride in  matching talents and employers to form enduring partnerships.<br> Feel free to leave me a message if you are looking for an assistance! </p>
-<ul>
-    <li> LinkedIn: <a href="https://www.linkedin.com/in/thy-do-4730881b0/">https://www.linkedin.com/in/thy-do-4730881b0/</a></li>
-    <li> Github: <a href="https://github.com/thyhyhyy">https://github.com/thyhyhyy</a></li>
-    <li> X: <a href="https://x.com/Thyhyhyy">https://x.com/Thyhyhyy</a></li>
-    <li> Email: <a href="mailto:thy_do@epam.com">thy_do@epam.com</a></li>
-</ul>
-<p> Happy connecting! <p>
-
+<main>
+    <h1>Hi Friends! It's Thy 🐈</h1>
+    <p class="bio">I'm glad you are here. I'm a Global Recruiter, a Vietnamese girl, who take great pride in matching talents and employers to form enduring partnerships. Feel free to leave me a message if you are looking for an assistance!</p>
+    <ul>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/thy-do-4730881b0/">https://www.linkedin.com/in/thy-do-4730881b0/</a></li>
+        <li>Github: <a href="https://github.com/thyhyhyy">https://github.com/thyhyhyy</a></li>
+        <li>X: <a href="https://x.com/Thyhyhyy">https://x.com/Thyhyhyy</a></li>
+        <li>Email: <a href="mailto:thy_do@epam.com">thy_do@epam.com</a></li>
+    </ul>
+    <p class="closing">Happy connecting!</p>
+</main>
 </body>
 </html>
