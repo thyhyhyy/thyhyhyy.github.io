@@ -2,27 +2,28 @@
 <html>
 <style>
 a:link {
-  color: blue;
+  color: #7C3AED;
   background-color: none;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 a:visited {
-  color: blue;
+  color: #7C3AED;
   background-color: none;
   text-decoration: none;
 }
 
 a:hover {
-  color: blue;
-  background-color: none;
-  text-decoration: underline;
+  color: #5B21B6;
+  text-decoration: none;
+  transform: translateY(-2px);
 }
 
 a:active {
-  color: blue;
+  color: #5B21B6;
   background-color: none;
-  text-decoration: underline;
+  text-decoration: none;
 }
 body {
   background: linear-gradient(135deg, #FFDAB9 0%, #E6E6FA 100%);
@@ -30,8 +31,19 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 20px;
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
   line-height: 1.6;
+  animation: fadeIn 1s ease-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 h1, p, li {
   color: #333;
@@ -39,10 +51,21 @@ h1, p, li {
 main {
   max-width: 700px;
   margin: 40px auto;
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.9);
   padding: 40px;
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  animation: slideUp 0.8s ease-out;
+}
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 h1 {
   font-family: 'Press Start 2P', cursive;
@@ -62,10 +85,15 @@ p.bio {
 ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 li {
-  margin-bottom: 12px;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 p.closing {
   text-align: center;
@@ -73,23 +101,62 @@ p.closing {
   color: #777;
   margin-top: 30px;
 }
+.divider {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #7C3AED, #A78BFA);
+  margin: 30px auto;
+  border-radius: 2px;
+}
+.cta-button {
+  display: inline-block;
+  padding: 14px 32px;
+  background: #7C3AED;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
+}
+.cta-button:link,
+.cta-button:visited,
+.cta-button:hover,
+.cta-button:active {
+  color: white;
+}
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(124, 58, 237, 0.4);
+  color: white;
+}
+.cta-container {
+  text-align: center;
+  margin-top: 30px;
+}
 </style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
 <main>
     <h1>Hi Friends! It's Thy 🐈</h1>
     <p class="bio">I'm glad you are here. I'm a Global Recruiter, a Vietnamese girl, who take great pride in matching talents and employers to form enduring partnerships. Feel free to leave me a message if you are looking for an assistance!</p>
     <ul>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/thy-do-4730881b0/">https://www.linkedin.com/in/thy-do-4730881b0/</a></li>
-        <li>Github: <a href="https://github.com/thyhyhyy">https://github.com/thyhyhyy</a></li>
-        <li>X: <a href="https://x.com/Thyhyhyy">https://x.com/Thyhyhyy</a></li>
-        <li>Email: <a href="mailto:thy_do@epam.com">thy_do@epam.com</a></li>
+        <li>🔗 LinkedIn <a href="https://www.linkedin.com/in/thy-do-4730881b0/">@thy-do</a></li>
+        <li>💻 Github <a href="https://github.com/thyhyhyy">@thyhyhyy</a></li>
+        <li>𝕏 X <a href="https://x.com/Thyhyhyy">@Thyhyhyy</a></li>
+        <li>✉️ Email <a href="mailto:thy_do@epam.com">thy_do@epam.com</a></li>
     </ul>
+    <div class="divider"></div>
     <p class="closing">Happy connecting!</p>
+    <div class="cta-container">
+        <a href="https://www.linkedin.com/in/thy-do-4730881b0/" class="cta-button">Let's Connect</a>
+    </div>
 </main>
 </body>
 </html>
