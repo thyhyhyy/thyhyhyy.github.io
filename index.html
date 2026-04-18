@@ -153,6 +153,11 @@
       gap: 18px;
     }
 
+    .hero-copy .hero-portrait-shell {
+      width: min(280px, 100%);
+      margin-bottom: 2px;
+    }
+
     .eyebrow {
       display: inline-flex;
       align-items: center;
@@ -309,28 +314,6 @@
       border: 1px solid rgba(255, 255, 255, 0.78);
       box-shadow: 0 16px 28px rgba(65, 43, 121, 0.16);
       background: linear-gradient(180deg, #fff8f9 0%, #f9f4ff 100%);
-    }
-
-    .hero-panel-copy {
-      display: grid;
-      gap: 10px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .hero-panel-eyebrow {
-      display: inline-flex;
-      width: fit-content;
-      align-items: center;
-      padding: 7px 12px;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.8);
-      border: 1px solid rgba(103, 80, 164, 0.1);
-      color: var(--accent-deep);
-      font-size: 0.8rem;
-      font-weight: 700;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
     }
 
     .hero-panel h2 {
@@ -599,7 +582,14 @@
       <main>
         <section class="hero">
           <div class="hero-copy">
-            <span class="eyebrow">Global Tech Recruiter</span>
+            <div class="hero-portrait-shell">
+              <img
+                class="hero-portrait"
+                src="Do%20Ngoc%20Minh%20Thy_1%20(1).PNG"
+                alt="Chibi-style portrait of Thy Do"
+              >
+            </div>
+            <span class="eyebrow">Global Technical Recruiter</span>
             <h1 class="hero-name">Thy Do</h1>
             <p class="hero-title">EPAM Systems | Ho Chi Minh City | APAC and global hiring</p>
             <p class="hero-lead">
@@ -620,17 +610,7 @@
           </div>
 
           <aside class="hero-panel" aria-label="Quick overview">
-            <div class="hero-portrait-shell">
-              <img
-                class="hero-portrait"
-                src="Do%20Ngoc%20Minh%20Thy_1%20(1).PNG"
-                alt="Chibi-style portrait of Thy Do"
-              >
-            </div>
-            <div class="hero-panel-copy">
-              <span class="hero-panel-eyebrow">Cute but premium</span>
-              <h2>At a glance</h2>
-            </div>
+            <h2>At a glance</h2>
             <div class="stats">
               <div class="stat">
                 <span class="stat-value">15K+</span>
