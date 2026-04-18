@@ -254,6 +254,8 @@
     }
 
     .hero-panel {
+      position: relative;
+      overflow: hidden;
       background: linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, rgba(248, 243, 255, 0.92) 100%);
       border: 1px solid rgba(103, 80, 164, 0.1);
       border-radius: var(--radius-xl);
@@ -261,6 +263,74 @@
       display: flex;
       flex-direction: column;
       gap: 18px;
+    }
+
+    .hero-panel::before {
+      content: "";
+      position: absolute;
+      inset: auto -18% -24% auto;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255, 163, 209, 0.25) 0%, rgba(255, 163, 209, 0) 72%);
+      pointer-events: none;
+    }
+
+    .hero-portrait-shell {
+      position: relative;
+      padding: 12px;
+      border-radius: 28px;
+      background:
+        linear-gradient(145deg, rgba(255, 255, 255, 0.96) 0%, rgba(244, 237, 255, 0.98) 100%),
+        linear-gradient(135deg, rgba(109, 74, 255, 0.16) 0%, rgba(255, 163, 209, 0.18) 100%);
+      border: 1px solid rgba(109, 74, 255, 0.12);
+      box-shadow: 0 22px 38px rgba(87, 61, 173, 0.14);
+      isolation: isolate;
+    }
+
+    .hero-portrait-shell::before {
+      content: "";
+      position: absolute;
+      inset: 12% 12% auto;
+      height: 64%;
+      border-radius: 999px;
+      background: radial-gradient(circle, rgba(255, 171, 210, 0.34) 0%, rgba(140, 117, 255, 0.16) 46%, rgba(140, 117, 255, 0) 74%);
+      filter: blur(16px);
+      z-index: -1;
+    }
+
+    .hero-portrait {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 22px;
+      border: 1px solid rgba(255, 255, 255, 0.78);
+      box-shadow: 0 16px 28px rgba(65, 43, 121, 0.16);
+      background: linear-gradient(180deg, #fff8f9 0%, #f9f4ff 100%);
+    }
+
+    .hero-panel-copy {
+      display: grid;
+      gap: 10px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-panel-eyebrow {
+      display: inline-flex;
+      width: fit-content;
+      align-items: center;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(103, 80, 164, 0.1);
+      color: var(--accent-deep);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
     }
 
     .hero-panel h2 {
@@ -297,6 +367,17 @@
     .contact-note {
       margin: 0;
       line-height: 1.7;
+    }
+
+    .hero-soft-note {
+      margin: 0;
+      padding: 14px 16px;
+      border-radius: var(--radius-md);
+      background: rgba(255, 255, 255, 0.66);
+      border: 1px solid rgba(103, 80, 164, 0.08);
+      color: var(--text);
+      font-weight: 600;
+      line-height: 1.6;
     }
 
     .contact-grid {
@@ -539,7 +620,17 @@
           </div>
 
           <aside class="hero-panel" aria-label="Quick overview">
-            <h2>At a glance</h2>
+            <div class="hero-portrait-shell">
+              <img
+                class="hero-portrait"
+                src="Do%20Ngoc%20Minh%20Thy_1%20(1).PNG"
+                alt="Chibi-style portrait of Thy Do"
+              >
+            </div>
+            <div class="hero-panel-copy">
+              <span class="hero-panel-eyebrow">Cute but premium</span>
+              <h2>At a glance</h2>
+            </div>
             <div class="stats">
               <div class="stat">
                 <span class="stat-value">15K+</span>
@@ -556,6 +647,9 @@
             </div>
             <p class="contact-note">
               I regularly share hiring opportunities, talent attraction insights, and updates from the tech market.
+            </p>
+            <p class="hero-soft-note">
+              Friendly, thoughtful, and always happy to connect with great people across tech.
             </p>
             <div class="contact-grid">
               <a class="contact-card" href="https://www.linkedin.com/in/thy-do-4730881b0/" target="_blank" rel="noreferrer">
