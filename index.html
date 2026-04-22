@@ -379,6 +379,16 @@
       margin-top: 6px;
     }
 
+    .hero-summary {
+      display: grid;
+      gap: 14px;
+      margin-top: 6px;
+    }
+
+    .hero-summary h2 {
+      font-size: 1.15rem;
+    }
+
     .button {
       display: inline-flex;
       align-items: center;
@@ -479,6 +489,15 @@
 
     .hero-panel h2 {
       font-size: 1.15rem;
+    }
+
+    .hero-panel-section {
+      display: grid;
+      gap: 10px;
+    }
+
+    .hero-panel-section .list {
+      margin-top: 0;
     }
 
     .stats {
@@ -827,48 +846,65 @@
               <a class="button button-primary" href="https://www.linkedin.com/in/thy-do-4730881b0/" target="_blank" rel="noreferrer">Connect on LinkedIn</a>
               <a class="button button-secondary" href="mailto:thy_do@epam.com">Email Me</a>
             </div>
-            <ul class="hero-tags" aria-label="Highlights">
-              <li>Engineering</li>
-              <li>Data and AI</li>
-              <li>Consulting and Delivery</li>
-              <li>People-first recruiting</li>
-            </ul>
+            <div class="hero-summary" aria-label="At a glance">
+              <h2>At a glance</h2>
+              <div class="stats">
+                <div class="stat">
+                  <span class="stat-value">15K+</span>
+                  <span class="stat-label">LinkedIn followers</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">500+</span>
+                  <span class="stat-label">Professional connections</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">Global</span>
+                  <span class="stat-label">Hiring scope</span>
+                </div>
+              </div>
+            </div>
           </div>
 
           <aside class="hero-panel" aria-label="Quick overview">
-            <h2>At a glance</h2>
-            <div class="stats">
-              <div class="stat">
-                <span class="stat-value">15K+</span>
-                <span class="stat-label">LinkedIn followers</span>
-              </div>
-              <div class="stat">
-                <span class="stat-value">500+</span>
-                <span class="stat-label">Professional connections</span>
-              </div>
-              <div class="stat">
-                <span class="stat-value">Global</span>
-                <span class="stat-label">Hiring scope</span>
-              </div>
-            </div>
             <p class="contact-note">
               I regularly share hiring opportunities, talent attraction insights, and updates from the tech market.
             </p>
             <p class="hero-soft-note">
               Friendly, thoughtful, and always happy to connect with great people across tech.
             </p>
+            <div class="hero-panel-section">
+              <h2>Let's Connect</h2>
+              <ul class="list">
+                <li>
+                  <strong>Discover opportunities</strong>
+                  Learn about active and emerging roles across tech and digital teams.
+                </li>
+                <li>
+                  <strong>Stay close to the market</strong>
+                  Follow updates on hiring trends, talent attraction, and the evolving AI landscape.
+                </li>
+                <li>
+                  <strong>Build long-term connections</strong>
+                  I value relationships that grow over time, not just one-off job conversations.
+                </li>
+              </ul>
+            </div>
             <div class="contact-grid">
+              <a class="contact-card" href="mailto:thy_do@epam.com">
+                <strong>Email</strong>
+                <p>thy_do@epam.com</p>
+              </a>
               <a class="contact-card" href="https://www.linkedin.com/in/thy-do-4730881b0/" target="_blank" rel="noreferrer">
                 <strong>LinkedIn</strong>
-                <p>Follow updates, openings, and career conversations.</p>
+                <p>@thy-do</p>
               </a>
               <a class="contact-card" href="https://github.com/thyhyhyy" target="_blank" rel="noreferrer">
                 <strong>GitHub</strong>
-                <p>View my projects and links across the web.</p>
+                <p>@thyhyhyy</p>
               </a>
               <a class="contact-card" href="https://x.com/Thyhyhyy" target="_blank" rel="noreferrer">
                 <strong>X</strong>
-                <p>Stay connected through shorter updates and conversations.</p>
+                <p>@Thyhyhyy</p>
               </a>
             </div>
           </aside>
@@ -916,24 +952,6 @@
           </div>
 
           <div class="stack">
-            <section class="card">
-              <h3>Why Connect With Me</h3>
-              <ul class="list">
-                <li>
-                  <strong>Discover opportunities</strong>
-                  Learn about active and emerging roles across tech and digital teams.
-                </li>
-                <li>
-                  <strong>Stay close to the market</strong>
-                  Follow updates on hiring trends, talent attraction, and the evolving AI landscape.
-                </li>
-                <li>
-                  <strong>Build long-term connections</strong>
-                  I value relationships that grow over time, not just one-off job conversations.
-                </li>
-              </ul>
-            </section>
-
             <section class="card">
               <h3>Currently Sharing</h3>
               <ul class="chip-list" aria-label="Topics I share">
@@ -984,27 +1002,6 @@
                 </li>
               </ul>
               <a class="section-link" href="https://www.linkedin.com/in/thy-do-4730881b0/" target="_blank" rel="noreferrer">View on LinkedIn</a>
-            </section>
-
-            <section class="card" id="connect">
-              <h3>Contact</h3>
-              <p>
-                If you are exploring new opportunities, hiring for your team, or simply want to connect, I would love to hear from you.
-              </p>
-              <div class="contact-grid" style="margin-top: 16px;">
-                <a class="contact-card" href="mailto:thy_do@epam.com">
-                  <strong>Email</strong>
-                  <p>thy_do@epam.com</p>
-                </a>
-                <a class="contact-card" href="https://www.linkedin.com/in/thy-do-4730881b0/" target="_blank" rel="noreferrer">
-                  <strong>LinkedIn</strong>
-                  <p>@thy-do</p>
-                </a>
-                <a class="contact-card" href="https://github.com/thyhyhyy" target="_blank" rel="noreferrer">
-                  <strong>GitHub</strong>
-                  <p>@thyhyhyy</p>
-                </a>
-              </div>
             </section>
           </div>
         </div>
