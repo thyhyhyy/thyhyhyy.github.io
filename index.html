@@ -448,6 +448,54 @@
       color: var(--text);
     }
 
+    .cert-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .cert-icon {
+      flex: 0 0 28px;
+      width: 28px;
+      height: 28px;
+      display: inline-grid;
+      place-items: center;
+      border-radius: 10px;
+      padding: 5px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(245, 241, 235, 0.96) 100%);
+      border: 1px solid rgba(32, 26, 48, 0.1);
+      box-shadow: 0 10px 18px rgba(65, 43, 121, 0.1);
+    }
+
+    .cert-icon img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .meta-line {
+      display: block;
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.5;
+    }
+
+    .section-link {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 16px;
+      color: var(--accent-deep);
+      font-weight: 700;
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    .section-link:hover,
+    .section-link:focus-visible {
+      color: var(--accent);
+      transform: translateY(-1px);
+    }
+
     .quote {
       margin: 18px 0 0;
       padding: 18px 18px 18px 20px;
@@ -718,6 +766,40 @@
                 <li>Life at EPAM</li>
                 <li>Tech and AI roles</li>
               </ul>
+            </section>
+
+            <section class="card">
+              <h3>Anthropic Certifications</h3>
+              <p>
+                Recent Anthropic learning in AI fluency, Claude workflows, and agent-based tools.
+              </p>
+              <ul class="list" aria-label="Anthropic certifications">
+                <li>
+                  <strong class="cert-title"><span class="cert-icon" aria-hidden="true"><img src="anthropic-logo.png" alt=""></span><span>AI Fluency Framework &amp; Foundations</span></strong>
+                  <span class="meta-line">Anthropic | Issued Apr 2026</span>
+                </li>
+                <li>
+                  <strong class="cert-title"><span class="cert-icon" aria-hidden="true"><img src="anthropic-logo.png" alt=""></span><span>Claude 101</span></strong>
+                  <span class="meta-line">Anthropic | Issued Apr 2026</span>
+                </li>
+                <li>
+                  <strong class="cert-title"><span class="cert-icon" aria-hidden="true"><img src="anthropic-logo.png" alt=""></span><span>Claude Code 101</span></strong>
+                  <span class="meta-line">Anthropic | Issued Apr 2026</span>
+                </li>
+                <li>
+                  <strong class="cert-title"><span class="cert-icon" aria-hidden="true"><img src="anthropic-logo.png" alt=""></span><span>Introduction to Claude Cowork</span></strong>
+                  <span class="meta-line">Anthropic | Issued Apr 2026</span>
+                </li>
+                <li>
+                  <strong class="cert-title"><span class="cert-icon" aria-hidden="true"><img src="anthropic-logo.png" alt=""></span><span>Introduction to Subagents</span></strong>
+                  <span class="meta-line">Anthropic | Issued Apr 2026</span>
+                </li>
+                <li>
+                  <strong class="cert-title"><span class="cert-icon" aria-hidden="true"><img src="anthropic-logo.png" alt=""></span><span>Claude Code in Action</span></strong>
+                  <span class="meta-line">Anthropic | Issued Apr 2026</span>
+                </li>
+              </ul>
+              <a class="section-link" href="https://www.linkedin.com/in/thy-do-4730881b0/" target="_blank" rel="noreferrer">View on LinkedIn</a>
             </section>
 
             <section class="card" id="connect">
