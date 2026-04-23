@@ -372,13 +372,6 @@
       max-width: 62ch;
     }
 
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 6px;
-    }
-
     .hero-summary {
       display: grid;
       gap: 14px;
@@ -502,7 +495,7 @@
 
     .stats {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 12px;
     }
 
@@ -511,6 +504,83 @@
       border-radius: var(--radius-md);
       background: var(--panel-strong);
       border: 1px solid var(--surface-border-strong);
+      box-shadow: 0 10px 22px rgba(87, 61, 173, 0.08);
+    }
+
+    .hero-summary .stat:nth-child(1) {
+      background: linear-gradient(135deg, rgba(255, 238, 228, 0.98) 0%, rgba(255, 250, 246, 0.96) 100%);
+      border-color: rgba(240, 178, 146, 0.26);
+    }
+
+    .hero-summary .stat:nth-child(1) .stat-value {
+      color: #c76b40;
+    }
+
+    .hero-summary .stat:nth-child(2) {
+      background: linear-gradient(135deg, rgba(241, 237, 255, 0.98) 0%, rgba(250, 247, 255, 0.96) 100%);
+      border-color: rgba(146, 116, 236, 0.22);
+    }
+
+    .hero-summary .stat:nth-child(2) .stat-value {
+      color: #6d4aff;
+    }
+
+    .hero-summary .stat:nth-child(3) {
+      background: linear-gradient(135deg, rgba(255, 236, 246, 0.98) 0%, rgba(255, 247, 251, 0.96) 100%);
+      border-color: rgba(228, 134, 180, 0.24);
+    }
+
+    .hero-summary .stat:nth-child(3) .stat-value {
+      color: #c4578d;
+    }
+
+    .hero-summary .stat:nth-child(4) {
+      background: linear-gradient(135deg, rgba(237, 246, 255, 0.98) 0%, rgba(247, 251, 255, 0.96) 100%);
+      border-color: rgba(104, 164, 224, 0.24);
+    }
+
+    .hero-summary .stat:nth-child(4) .stat-value {
+      color: #3e78b2;
+    }
+
+    [data-theme="dark"] .hero-summary .stat {
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.22);
+    }
+
+    [data-theme="dark"] .hero-summary .stat:nth-child(1) {
+      background: linear-gradient(135deg, rgba(95, 53, 38, 0.6) 0%, rgba(50, 34, 31, 0.82) 100%);
+      border-color: rgba(240, 178, 146, 0.2);
+    }
+
+    [data-theme="dark"] .hero-summary .stat:nth-child(1) .stat-value {
+      color: #ffc3a6;
+    }
+
+    [data-theme="dark"] .hero-summary .stat:nth-child(2) {
+      background: linear-gradient(135deg, rgba(76, 55, 127, 0.62) 0%, rgba(36, 29, 58, 0.84) 100%);
+      border-color: rgba(179, 140, 255, 0.22);
+    }
+
+    [data-theme="dark"] .hero-summary .stat:nth-child(2) .stat-value {
+      color: #d3b7ff;
+    }
+
+    [data-theme="dark"] .hero-summary .stat:nth-child(3) {
+      background: linear-gradient(135deg, rgba(115, 50, 84, 0.6) 0%, rgba(52, 29, 44, 0.84) 100%);
+      border-color: rgba(240, 143, 190, 0.2);
+    }
+
+    [data-theme="dark"] .hero-summary .stat:nth-child(3) .stat-value {
+      color: #ffb5d8;
+    }
+
+    [data-theme="dark"] .hero-summary .stat:nth-child(4) {
+      background: linear-gradient(135deg, rgba(45, 78, 112, 0.62) 0%, rgba(29, 39, 58, 0.84) 100%);
+      border-color: rgba(104, 164, 224, 0.2);
+    }
+
+    [data-theme="dark"] .hero-summary .stat:nth-child(4) .stat-value {
+      color: #a7d6ff;
     }
 
     .stat-value {
@@ -722,7 +792,7 @@
       }
 
       .stats {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
       }
 
       .footer-card {
@@ -776,7 +846,6 @@
         grid-template-columns: 1fr;
       }
 
-      .hero-actions,
       .top-links,
       .theme-toggle {
         width: 100%;
@@ -842,10 +911,6 @@
               My work is rooted in thoughtful conversations, long-term relationships, and helping great people
               find teams where they can do their best work.
             </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="https://www.linkedin.com/in/thy-do-4730881b0/" target="_blank" rel="noreferrer">Connect on LinkedIn</a>
-              <a class="button button-secondary" href="mailto:thy_do@epam.com">Email Me</a>
-            </div>
             <div class="hero-summary" aria-label="At a glance">
               <h2>At a glance</h2>
               <div class="stats">
@@ -860,6 +925,10 @@
                 <div class="stat">
                   <span class="stat-value">Global</span>
                   <span class="stat-label">Hiring scope</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">Insights</span>
+                  <span class="stat-label">Market research</span>
                 </div>
               </div>
             </div>
